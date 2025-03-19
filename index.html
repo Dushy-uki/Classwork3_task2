@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <div class="bdy">
+    <h1>String Operators</h1>
+    <h3>Enter first string</h3>
+    <input id="ipt1" placeholder="Enter first string">
+    <h3>Enter secound string</h3>
+    <input id="ipt2" placeholder="Enter second string"><br><br>
+    <button id="btn" style="background-color: rgb(16, 161, 70); width: 60px;">Click</button>
+    
+    <p id="Concatenation"></p>
+    <p id="Length"></p>
+    <p id="Length2"></p>
+    <p id="Uppercase"></p>
+    <p id="Lowercase"></p>
+</div>
+    <script>
+        
+
+        function clickFunction(){
+            let par1 = document.getElementById("ipt1").value;
+            let par2 = document.getElementById("ipt2").value;
+
+            document.getElementById("Concatenation").textContent = 'Concatenation: ' + par1.concat(par2);
+            document.getElementById("Length").textContent = 'Total Length of first string: ' + (par1.length);
+            document.getElementById("Length2").textContent = 'Total Length of secound string: ' + (par2.length);
+            document.getElementById("Uppercase").textContent = 'Uppercase: ' + (par1).toUpperCase();
+            document.getElementById("Lowercase").textContent = 'Lowercase: ' + (par2).toLowerCase();
+        }
+        document.getElementById("btn").addEventListener("click", clickFunction);
+    </script>
+</body>
+</html>

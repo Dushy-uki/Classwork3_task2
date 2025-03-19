@@ -1,3 +1,15 @@
-.bdy{
- align-items: center;
+div{
+    margin-left: 800px;
+}
+h3{
+    margin-left: 50px;
+}
+input{
+    margin-left: 35px;
+}
+button{
+    margin-left: 90px;
+}
+p{
+    margin-left: 40px;
 }
